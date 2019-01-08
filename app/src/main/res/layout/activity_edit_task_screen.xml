@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+              android:background="@android:color/background_light" android:paddingTop="10dp" android:paddingLeft="10dp"
+              android:paddingRight="10dp" android:layout_marginTop="20dp" android:layout_gravity="center_horizontal">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/textView3" android:layout_height="50dp"
+            android:text="Edit Task"
+            android:textSize="30sp" android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="false" android:paddingLeft="20dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/editTaskSummary" android:textSize="20sp"
+            android:background="@drawable/border"
+            android:singleLine="true" android:paddingLeft="10dp" android:gravity="top|left" android:paddingTop="10dp"/>
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center_vertical" android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" android:layout_marginTop="16dp">
+        <TextView
+                android:layout_width="186dp"
+                android:layout_height="45dp"
+                android:inputType="textPersonName"
+                android:ems="10" android:background="@drawable/border"
+                android:id="@+id/editBuDateTextbox" android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:gravity="top|left" android:paddingTop="10dp"/>
+        <Button
+                android:text="Pick Date"
+                android:layout_width="111dp"
+                android:layout_height="45dp" android:id="@+id/editBuPickDate"
+                android:layout_marginLeft="20dp"/>
+    </TableRow>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editTaskDetails"
+            android:layout_marginBottom="4dp" android:background="@drawable/border"
+            android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:layout_marginTop="16dp"
+            android:textSize="20sp" android:gravity="top|left"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"/>
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:gravity="center_horizontal" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+            <Button
+                    android:text="Edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/editBuEdit" android:textAllCaps="false"
+                    android:layout_margin="20dp"/>
+            <Button
+                    android:text="Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/editBuCancel" android:textAllCaps="false"
+                    android:layout_margin="20dp"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
